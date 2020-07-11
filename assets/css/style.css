@@ -1,0 +1,456 @@
+/* 
+WEB KMM Al Musthofa
+Produksi 2020
+Dev : Angki Pranamukti (DEMINFO)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Overwrite Bootstrap Styling Start*/
+
+.btn {
+    padding: .385rem 1.25rem;
+    border-radius: 20px;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.btn.btn-primary {
+    background: #4CAF50;
+    border: 0px;
+    transition: 0.2s all;
+}
+
+.btn.btn-primary[tabindex]:focus,
+.btn.btn-primary:active {
+    border: 0px!important;
+    outline: none;
+    background: #219653;
+    box-shadow: 0px 3px 10px #219653!important;
+}
+
+.btn.btn-primary:hover {
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 10px #4CAF50;
+}
+
+.navbar {
+    background: #fff;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    padding: 1.25rem 1rem;
+    width: 100%;
+    z-index: 10;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.navbar-brand img {
+    height: 27px;
+    margin: 0 10px;
+}
+
+.nav-item.active {
+    /* border-bottom: 3px solid #27AE60; */
+}
+
+.navbar-palsu {
+    width: 100%;
+    height: 80px;
+    display: block;
+}
+
+.jumbotron {
+    background: #fff;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 12rem 3rem;
+    margin: 0;
+}
+
+span.cursor {
+    display: inline-block;
+    background-color: #c3f2d7;
+    margin-left: 0.1rem;
+    margin-top: 0.3rem;
+    width: 3px;
+    height: 41px;
+    vertical-align: top;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0% {
+        background-color: #ccc;
+    }
+    49% {
+        background-color: #ccc;
+    }
+    50% {
+        background-color: transparent;
+    }
+    99% {
+        background-color: transparent;
+    }
+    100% {
+        background-color: #ccc;
+    }
+}
+
+.display-4 {
+    font-weight: bold;
+}
+
+.typed-text {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #4CAF50;
+}
+
+@media(max-width: 540px) {
+    .jumbotron {
+        padding: 8rem 2rem;
+    }
+}
+
+
+/* Overwrite Bootstrap Styling Stop*/
+
+
+/* General Section Styling Start */
+
+.section-header.text-center .small-divider {
+    display: block;
+    margin: 15px auto;
+}
+
+.small-divider {
+    border-radius: 20px;
+    background: #C3F2D7;
+    width: 70px;
+    height: 10px;
+    margin: 15px 0px;
+}
+
+.section-header {
+    padding: 0px 0px 10px 0px;
+}
+
+section h1 {
+    font-weight: bold;
+}
+
+section {
+    /* margin: 60px 0px; */
+}
+
+section p {
+    font-size: 16pt;
+}
+
+.section-button {
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+}
+
+
+/* General Section Styling Stop */
+
+
+/* Profil Section Start */
+
+#profil {
+    border-bottom: 1px solid #c4c4c4;
+    padding: 80px 0px;
+}
+
+#logo {
+    height: 239px;
+    display: block;
+    margin: auto;
+    position: relative;
+    transition: 0.2s all;
+}
+
+.logo-shadow {
+    position: absolute;
+    background: #C3F2D7;
+    border-radius: 20px;
+    height: 239px;
+    width: 329px;
+    top: 25px;
+    left: 0;
+    right: 40px;
+    margin: auto;
+    z-index: -1;
+}
+
+@media(max-width: 991px) {
+    #logo-wrapper {
+        margin: 40px 0px;
+    }
+}
+
+@media(max-width: 540px) {
+    #logo {
+        height: 180px;
+    }
+    .logo-shadow {
+        height: 180px;
+        width: 248px;
+        right: 0px;
+    }
+}
+
+
+/* Profil Section Stop */
+
+
+/* Artikel Section Start */
+
+#artikel {
+    border-bottom: 1px solid #c4c4c4;
+    padding: 80px 0px;
+}
+
+.label-article {
+    background: #219653;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 5px 15px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 10px;
+    left: 10px;
+}
+
+.card {
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.19);
+}
+
+.card-img-wrapper {
+    position: relative;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-img,
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-body {
+    background: #fff;
+    position: relative;
+    margin-top: -75px;
+    border-radius: 20px;
+}
+
+.date {
+    color: #219653;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+
+/* Artikel Section Stop */
+
+
+/* Agenda Section Start */
+
+#agenda {
+    border-bottom: 1px solid #c4c4c4;
+    padding: 80px 0px;
+}
+
+#agenda .card-body {
+    margin-top: -160px;
+    padding: 1.25rem 1.25rem 1.25rem 8rem;
+}
+
+.date-agenda {
+    position: absolute;
+    bottom: 59px;
+    left: 30px;
+    z-index: 2;
+}
+
+.date-agenda .date {
+    font-size: 1.25em;
+    width: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+.round-date {
+    margin: auto;
+    background: #219653;
+    border-radius: 50%;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.macam-agenda {
+    color: #219653;
+    font-weight: bold;
+    font-size: 12pt;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.label-article {
+    background: #219653;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11pt;
+    padding: 5px 15px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 10px;
+    left: 10px;
+}
+
+#agenda .card {
+    width: 27rem;
+    margin: 20px auto;
+}
+
+.card {
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+    margin: 20px 0px;
+}
+
+.card-img-wrapper {
+    position: relative;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-img,
+.card-img-top {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-body {
+    background: #fff;
+    position: relative;
+    margin-top: -75px;
+    border-radius: 20px;
+}
+
+.date {
+    color: #219653;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+
+/* Agenda Section Stop */
+
+
+/* Socmed section start */
+
+#socmed {
+    border-bottom: 1px solid #c4c4c4;
+    padding: 80px 0px;
+}
+
+#socmed-block {
+    text-align: center;
+}
+
+#socmed-block p {
+    margin: 20px 0px;
+}
+
+.round-socmed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #219653;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 3.5em;
+    height: 100px;
+    margin: 0 auto;
+    width: 100px;
+    text-align: center;
+}
+
+
+/* Socmed section stop */
+
+
+/* Footer start */
+
+footer {
+    background: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0px 10px 0px;
+}
+
+footer img {
+    height: 60px;
+}
+
+footer h1 {
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+
+footer ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+footer ul li a {
+    color: #fff;
+    font-size: 1.5em;
+    padding: 0 10px;
+}
+
+#copy {
+    font-size: 10pt;
+}
+
+
+/* Footer stop */
+
+@media(max-width: 540px) {
+    #agenda .card {
+        width: auto;
+    }
+}

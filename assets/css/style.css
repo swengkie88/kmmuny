@@ -71,10 +71,29 @@ body {
 }
 
 .jumbotron {
-    background: #fff;
+    background: url('../img/banner.jpeg') no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
     border-bottom: 1px solid #c4c4c4;
+    border-radius: 0;
     padding: 12rem 3rem;
+    position: relative;
     margin: 0;
+}
+
+.filter-gradient {
+    background: linear-gradient(to bottom, black, transparent);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.jumbotron .container {
+    position: relative;
+    z-index: 2;
 }
 
 span.cursor {
@@ -107,6 +126,7 @@ span.cursor {
 }
 
 .display-4 {
+    color: #fff;
     font-weight: bold;
 }
 
@@ -146,6 +166,7 @@ span.cursor {
 }
 
 section h1 {
+    color: #333;
     font-weight: bold;
 }
 
@@ -154,6 +175,7 @@ section {
 }
 
 section p {
+    color: #333;
     font-size: 16pt;
 }
 
@@ -169,7 +191,6 @@ section p {
 /* Profil Section Start */
 
 #profil {
-    border-bottom: 1px solid #c4c4c4;
     padding: 80px 0px;
 }
 
@@ -215,6 +236,32 @@ section p {
 /* Profil Section Stop */
 
 
+/* Sekilas anggota start */
+
+#highlight {
+    background: #C3F2D7;
+    padding: 80px 0px;
+}
+
+.block-info {
+    text-align: center;
+}
+
+.block-info .number {
+    color: #333;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.block-info .text-info {
+    color: #333!important;
+    text-transform: uppercase;
+}
+
+
+/* Sekilas anggota stop */
+
+
 /* Artikel Section Start */
 
 #artikel {
@@ -246,6 +293,7 @@ section p {
 }
 
 .card-title {
+    color: #333;
     font-weight: bold;
 }
 
@@ -274,6 +322,10 @@ section p {
 
 /* Agenda Section Start */
 
+#agenda .section-button {
+    margin: 0px;
+}
+
 #agenda {
     border-bottom: 1px solid #c4c4c4;
     padding: 80px 0px;
@@ -296,7 +348,7 @@ section p {
     width: 70px;
     text-align: center;
     text-transform: uppercase;
-    color: black;
+    color: #333;
 }
 
 .round-date {
@@ -337,7 +389,7 @@ section p {
 
 #agenda .card {
     width: 27rem;
-    margin: 20px auto;
+    margin: 40px 60px;
 }
 
 .card {
@@ -375,6 +427,51 @@ section p {
     margin: 0 0 10px 0;
 }
 
+@media(max-width: 992px) {
+    #agenda .card {
+        width: auto;
+        margin: 20px;
+    }
+    #agenda .card .card-body {
+        margin-top: 0px;
+        padding: 1.25rem;
+    }
+    #agenda .card .card-img-wrapper {
+        height: 100px;
+    }
+    #agenda .card .date-agenda {
+        display: flex;
+        justify-content: center;
+        top: 10px;
+        left: 15px;
+        align-items: center;
+        bottom: unset;
+    }
+    #agenda .card .date-agenda .date {
+        font-size: 1em;
+        color: #fff;
+        margin: 0;
+    }
+    #agenda .card .round-date {
+        font-size: 1em;
+        height: 36px;
+        width: 36px;
+    }
+    #agenda .card .macam-agenda {
+        font-size: .85em;
+    }
+    #agenda .card .card-title {
+        font-size: 1em;
+    }
+}
+
+@media(max-width: 540px) {
+    #agenda .card {
+        width: 200px!important;
+        margin: 10px;
+    }
+}
+
 
 /* Agenda Section Stop */
 
@@ -382,7 +479,6 @@ section p {
 /* Socmed section start */
 
 #socmed {
-    border-bottom: 1px solid #c4c4c4;
     padding: 80px 0px;
 }
 
@@ -415,8 +511,8 @@ section p {
 /* Footer start */
 
 footer {
-    background: #333333;
-    color: #fff;
+    background: #F2F2F2;
+    color: #333;
     text-align: center;
     padding: 40px 0px 10px 0px;
 }
@@ -437,7 +533,7 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #fff;
+    color: #333;
     font-size: 1.5em;
     padding: 0 10px;
 }
@@ -448,9 +544,3 @@ footer ul li a {
 
 
 /* Footer stop */
-
-@media(max-width: 540px) {
-    #agenda .card {
-        width: auto;
-    }
-}

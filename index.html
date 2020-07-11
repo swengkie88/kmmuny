@@ -10,9 +10,11 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/slick.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <title>KMM Al Musthofa</title>
+    <title>Beranda | KMM Al Musthofa</title>
 </head>
 
 <body>
@@ -31,10 +33,10 @@
                         <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profil</a>
+                        <a class="nav-link" href="profil.html">Profil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Artikel</a>
+                        <a class="nav-link disabled" href="artikel.html" tabindex="-1" aria-disabled="true">Artikel</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Agenda</a>
@@ -45,13 +47,16 @@
     </nav>
     <div class="navbar-palsu"></div>
 
+    <!-- Jumbotron Start -->
     <div class="jumbotron">
         <div class="container">
             <h1 class="display-4">KMM UNITED 2020</h1>
             <p class="lead"><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
             <a class="btn btn-primary btn-lg" href="#" tabindex="1">Kenali Kami</a>
         </div>
+        <div class="filter-gradient"></div>
     </div>
+    <!-- Jumbotron Stop -->
 
     <!-- Section profil start -->
     <section id="profil">
@@ -73,6 +78,39 @@
         </div>
     </section>
     <!-- Section profil stop -->
+
+    <!-- Sekilas anggota start -->
+    <section id="highlight">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="block-info">
+                        <div class="number">
+                            6
+                        </div>
+                        <span class="text-info">Departemen</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="block-info">
+                        <div class="number">
+                            2
+                        </div>
+                        <span class="text-info">Badan Semi Otonom</span>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="block-info">
+                        <div class="number">
+                            100
+                        </div>
+                        <span class="text-info">Pengurus Aktif</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sekilas anggota stop -->
 
     <!-- Section artikel start -->
     <section id="artikel">
@@ -147,43 +185,107 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-6 col-md-12">
-                    <div class="card">
-                        <div class="card-img-wrapper">
-                            <div class="date-agenda">
-                                <div class="round-date">
-                                    10
-                                </div>
-                                <div class="date">
-                                    Juli 2020
-                                </div>
+            <div class="slider">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <div class="date-agenda">
+                            <div class="round-date">
+                                10
                             </div>
-                            <img src="assets/img/sample-image-1.jpg" class="card-img-top" alt="sample-image-1.jpg">
+                            <div class="date">
+                                Juli 2020
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p class="macam-agenda">Lentera Qolbu</p>
-                            <h4 class="card-title">Jadilah Manusia Yang Bermanfaat</h4>
-                        </div>
+                        <img src="assets/img/sample-image-1.jpg" class="card-img-top" alt="sample-image-1.jpg">
+                    </div>
+                    <div class="card-body">
+                        <p class="macam-agenda">Lentera Qolbu</p>
+                        <h4 class="card-title">Jadilah Manusia Yang Bermanfaat</h4>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="card">
-                        <div class="card-img-wrapper">
-                            <div class="date-agenda">
-                                <div class="round-date">
-                                    10
-                                </div>
-                                <div class="date">
-                                    Juli 2020
-                                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <div class="date-agenda">
+                            <div class="round-date">
+                                10
                             </div>
-                            <img src="assets/img/sample-image-1.jpg" class="card-img-top" alt="sample-image-1.jpg">
+                            <div class="date">
+                                Juli 2020
+                            </div>
                         </div>
-                        <div class="card-body">
-                            <p class="macam-agenda">Lentera Qolbu</p>
-                            <h4 class="card-title">Jadilah Manusia Yang Bermanfaat</h4>
+                        <img src="assets/img/sample-image-1.jpg" class="card-img-top" alt="sample-image-1.jpg">
+                    </div>
+                    <div class="card-body">
+                        <p class="macam-agenda">Lentera Qolbu</p>
+                        <h4 class="card-title">Jadilah Manusia Yang Bermanfaat</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <div class="date-agenda">
+                            <div class="round-date">
+                                10
+                            </div>
+                            <div class="date">
+                                Juli 2020
+                            </div>
                         </div>
+                        <img src="assets/img/sample-image-1.jpg" class="card-img-top" alt="sample-image-1.jpg">
+                    </div>
+                    <div class="card-body">
+                        <p class="macam-agenda">Lentera Qolbu</p>
+                        <h4 class="card-title">Jadilah Manusia Yang Bermanfaat</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <div class="date-agenda">
+                            <div class="round-date">
+                                10
+                            </div>
+                            <div class="date">
+                                Juli 2020
+                            </div>
+                        </div>
+                        <img src="assets/img/sample-image-1.jpg" class="card-img-top" alt="sample-image-1.jpg">
+                    </div>
+                    <div class="card-body">
+                        <p class="macam-agenda">Lentera Qolbu</p>
+                        <h4 class="card-title">Jadilah Manusia Yang Bermanfaat</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <div class="date-agenda">
+                            <div class="round-date">
+                                10
+                            </div>
+                            <div class="date">
+                                Juli 2020
+                            </div>
+                        </div>
+                        <img src="assets/img/sample-image-1.jpg" class="card-img-top" alt="sample-image-1.jpg">
+                    </div>
+                    <div class="card-body">
+                        <p class="macam-agenda">Lentera Qolbu</p>
+                        <h4 class="card-title">Jadilah Manusia Yang Bermanfaat</h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <div class="date-agenda">
+                            <div class="round-date">
+                                10
+                            </div>
+                            <div class="date">
+                                Juli 2020
+                            </div>
+                        </div>
+                        <img src="assets/img/sample-image-1.jpg" class="card-img-top" alt="sample-image-1.jpg">
+                    </div>
+                    <div class="card-body">
+                        <p class="macam-agenda">Lentera Qolbu</p>
+                        <h4 class="card-title">Jadilah Manusia Yang Bermanfaat</h4>
                     </div>
                 </div>
             </div>
@@ -258,6 +360,11 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- Slick js buat slider agenda -->
+    <script src="assets/js/slick.js"></script>
+
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/main.js"></script>

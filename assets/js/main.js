@@ -52,8 +52,6 @@ $(".number").counterUp({ time: 3000 });
 jQuery(document).ready(function($) {
     $('.slider').slick({
         dots: false,
-        infinite: true,
-        speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
         autoplay: true,
@@ -70,16 +68,14 @@ jQuery(document).ready(function($) {
                 breakpoint: 600,
                 settings: {
                     arrows: false,
-                    slidesToShow: 2,
-                    slidesToScroll: 1
+                    slidesToShow: 2
                 }
             },
             {
                 breakpoint: 400,
                 settings: {
                     arrows: false,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToShow: 1
                 }
             }
         ]

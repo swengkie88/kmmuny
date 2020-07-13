@@ -44,7 +44,7 @@ body {
 }
 
 .navbar {
-    background: #fff;
+    background: #607D8B;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
     padding: 1.25rem 1rem;
     width: 100%;
@@ -78,6 +78,7 @@ body {
     border-radius: 0;
     padding: 12rem 3rem;
     position: relative;
+    transition: 0.2s all;
     margin: 0;
 }
 
@@ -258,6 +259,12 @@ section p {
     text-transform: uppercase;
 }
 
+@media(max-width: 992px) {
+    .block-info {
+        padding: 10px 0px;
+    }
+}
+
 
 /* Sekilas anggota stop */
 
@@ -427,10 +434,57 @@ section p {
     margin: 0 0 10px 0;
 }
 
+.slider {
+    margin: 0 auto;
+}
+
+.slick-slide {
+    margin: 0 5px;
+}
+
+.slick-list {
+    margin: 0px -5px 0px -5px;
+}
+
+button.slick-next,
+button.slick-next:hover {
+    position: absolute;
+    top: 41%;
+    right: 0px;
+    width: 47px;
+    height: 75px;
+    background-image: url("../img/long-arrow-alt-right-solid.svg");
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+button.slick-prev,
+button.slick-prev:hover {
+    position: absolute;
+    top: 41%;
+    left: 0px;
+    z-index: 1;
+    width: 47px;
+    height: 75px;
+    background-image: url("../img/long-arrow-alt-left-solid.svg");
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 70px;
+    color: #EA8496;
+    line-height: inherit;
+    font-weight: bold;
+}
+
 @media(max-width: 992px) {
     #agenda .card {
-        width: auto;
-        margin: 20px;
+        /* width: auto; */
+        margin: 0px 5px;
     }
     #agenda .card .card-body {
         margin-top: 0px;
@@ -465,12 +519,12 @@ section p {
     }
 }
 
-@media(max-width: 540px) {
+
+/* @media(max-width: 540px) {
     #agenda .card {
-        width: 200px!important;
-        margin: 10px;
+        width: 250px!important;
     }
-}
+} */
 
 
 /* Agenda Section Stop */
@@ -497,10 +551,10 @@ section p {
     background: #219653;
     border-radius: 50%;
     color: #fff;
-    font-size: 3.5em;
-    height: 100px;
+    font-size: 2.5em;
+    height: 72px;
     margin: 0 auto;
-    width: 100px;
+    width: 72px;
     text-align: center;
 }
 

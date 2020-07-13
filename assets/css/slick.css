@@ -24,7 +24,7 @@
     display: block;
     overflow: hidden;
     margin: 0;
-    padding: 0;
+    padding: 20px 0px;
 }
 
 .slick-list:focus {
@@ -91,6 +91,7 @@
 
 .slick-initialized .slick-slide {
     display: block;
+    outline: none;
 }
 
 .slick-loading .slick-slide {
@@ -155,7 +156,7 @@
 .slick-next:focus {
     color: transparent;
     outline: none;
-    background: transparent;
+    background: #117542;
 }
 
 .slick-prev:hover:before,
